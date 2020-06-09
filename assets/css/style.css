@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/*--------------------------------------------Colors*/
+
+.bg-color-name-title {
+    background-color: #676767;
+}
+
+.ui-menu-color-home {
+    background-color: #e67e22;
+}
+
+.ui-menu-color-resume {
+    background-color: #9b59b6;
+}
+
+.ui-menu-color-contact {
+    background-color: #3498db;
+}
+
+.ui-menu-color-download {
+    background-color: #525252;
+}
+
+/*--------------------------------------------Heading*/
+
+header {
+    margin: 0;
+}
+
+.heading {
+    margin-left: 50px;
+}
+
+.logo {
+    background: url("../images/rosie.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /*cover will get the image to fill the container*/
+    min-height: 360px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    /*To make sure it works in all browsers, use -moz and -webkit*/
+}
+
+.name {
+    font-family: "Exo", sans-serif;
+    font-weight: 100;
+    font-size: 46px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    color: #fff;
+}
+
+/*The class below was found using the google dev tools facility via inspect and setting the margin to zero reduces the white space inbetween the menu items*/
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+/*The problem with the following container is that all of our terms will then have a font-size of zero, so we can no longer see them*/
+.menucontainer {
+    font-size: 0;
+}
+
+#nav {
+    margin: 0;
+}
+
+/*The effect of the above container can be overridden by using our nav ID, targeting all the children li's & giving a font-size of 14px*/
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
+
+.menuitem {
+    height: 120px;
+    text-align: center;
+    padding: 0;
+}
+
+/*The anchor, or the <a> tag, is our clickable area, so what we want to do is target that. It's a child of menuitem & we want to set it's width to 100%.*/
+.menuitem a {
+    width: 100%;
+    text-decoration: none; /*Removes the underline for the menu items during hover*/
+    color: #fff;
+    height: 120px;
+}
+
+/*a for anchor is a child of menuitem & i is a child of the anchor*/
+.menuitem a i {
+    padding-top: 22px;
+    /*Using display block so that the icon appears on a line of it's own*/
+    display: block;
+    color: #fafafa;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/*--------------------------------------------Hover.css*/
+
+.hvr-sweep-to-bottom:before {
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
