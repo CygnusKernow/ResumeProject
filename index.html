@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Rosie</title>
 </head>
+
 <body>
     <header>
         <div class="row no-gutters">
@@ -47,11 +48,81 @@
             </div>
         </div>
     </header>
-    <section>
-        
+
+    <section class="container-fluid">
+        <div class="row row-table">
+            <!--col-md-8 is 2 thirds of the width of the screen-->
+            <!--The row-table class specifies the use of a table whereas section-column specifies the use of a table cell, which will give us evenly sized columns in terms of height.-->
+            <div class="col-md-8 bg-color-three-reasons section-column">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">About Me</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        
+
+    <!--The container-fluid is added because we want it to be a full width flexible container-->
+    <footer class="container-fluid">
+        <div id="footer-details" class="row">
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">
+                    Full Stack Web Developer. Skilled in everything from HTML to Heroku.
+                    The capacity for structural & design thinking.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block">
+                    Need a printable version of my CV? Download it here.
+                    <!--Need an a-tag here because that will link to the pdf-->
+                    <!--Target-blank is used so that it will open up in a separate tab or window without losing the content on our main page-->
+                    <a href="#" target="_blank" class="cv-pdf">
+                        <!--Add font-awesome icon-->
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <!--sr-only is screen readers only, so it won't be displayed on a regular screen-->
+                        <span class="sr-only">Download link.</span>
+                    </a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Social</h5>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">pinterest</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
