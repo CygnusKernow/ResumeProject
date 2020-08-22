@@ -7,11 +7,15 @@
 }
 
 .bg-color-three-reasons {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .bg-color-personal-info {
     background-color: #f4f4f4;
+}
+
+.bg-color-skills {
+    background-color: #ffffff;
 }
 
 .bg-color-work-history {
@@ -19,7 +23,15 @@
 }
 
 .bg-color-contact {
-    background-color: #fff;
+    background-color: #ffffff;
+}
+
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
+    background-color: #ffffff;
 }
 
 .ui-menu-color-home {
@@ -35,10 +47,30 @@
 }
 
 .ui-menu-color-download {
-    background-color: #525252;
+    background-color: #d9a81d;
 }
 
-/*---------------------------------------Special paddings/margins/text */
+
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
+
+
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    background-color: #525252;
+    color: #555555;
+}
+
+
+/*--------------------------------------------Special Paddings/Margins/Text*/
 
 h1,
 h2,
@@ -61,14 +93,9 @@ h4 {
     display: inline-block;
 }
 
+
 .row-table {
     display: table;
-}
-
-.section-column {
-    display: table-cell;
-    padding: 0 30px 30px;
-    float: none;
 }
 
 .history-heading,
@@ -78,6 +105,7 @@ h4 {
     margin-top: 25px;
     margin-bottom: 40px;
 }
+
 
 /*--------------------------------------------Heading*/
 
@@ -93,12 +121,11 @@ header {
     background: url("../images/rosie.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; /*cover will get the image to fill the container*/
+    background-size: cover;
     min-height: 360px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
-    /*To make sure it works in all browsers, use -moz and -webkit*/
 }
 
 .name {
@@ -106,7 +133,7 @@ header {
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .title {
@@ -115,26 +142,14 @@ header {
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
-    color: #fff;
-}
-
-/*The class below was found using the google dev tools facility via inspect and setting the margin to zero reduces the white space inbetween the menu items*/
-.list-inline-item:not(:last-child) {
-    margin: 0;
-}
-
-/*The problem with the following container is that all of our terms will then have a font-size of zero, so we can no longer see them*/
-.menucontainer {
-    font-size: 0;
+    color: #ffffff;
 }
 
 #nav {
     margin: 0;
 }
 
-/*The effect of the above container can be overridden by using our nav ID, targeting all the children li's & giving a font-size of 14px*/
 #nav li {
-    font-size: 14px;
     padding: 0;
 }
 
@@ -144,23 +159,19 @@ header {
     padding: 0;
 }
 
-/*The anchor, or the <a> tag, is our clickable area, so what we want to do is target that. It's a child of menuitem & we want to set it's width to 100%.*/
 .menuitem a {
     width: 100%;
-    text-decoration: none; /*Removes the underline for the menu items during hover*/
-    color: #fff;
+    text-decoration: none;
+    color: #ffffff;
     height: 120px;
 }
 
-/*a for anchor is a child of menuitem & i is a child of the anchor*/
+
 .menuitem a i {
     padding-top: 22px;
-    /*Using display block so that the icon appears on a line of it's own*/
     display: block;
     color: #fafafa;
     font-size: 26px;
-    font-weight: 300;
-    letter-spacing: 2px;
 }
 
 .menuitem span {
@@ -174,12 +185,14 @@ header {
     letter-spacing: 2px;
 }
 
+
 /*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
+
 
 /*--------------------------------------------Footer*/
 
@@ -190,19 +203,19 @@ footer {
     margin: 0;
 }
 
-.cv-pdf i {
-    font-size: 18px;
+footer .cv-pdf i {
     color: #fafafa;
     text-align: center;
+    font-size: 18px;
     padding-left: 5px;
+}
+
+footer .cv-pdf i:hover {
+    color: #e84610;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-}
-
-.cv-pdf i:hover {
-    color: #e84610;
 }
 
 .social-links {
@@ -230,10 +243,10 @@ footer {
 }
 
 #footer-details {
-    padding: 20px;
+    margin: 20px;
 }
 
-/*---------------------------------------------Three reasons */
+/*--------------------------------------------Three Reasons*/
 
 .three-reasons-icon {
     font-size: 26px;
@@ -244,7 +257,7 @@ footer {
     margin-bottom: 15px;
 }
 
-/*---------------------------------------------Personal Info */
+/*--------------------------------------------Personal Info*/
 
 .personal-info-item {
     margin-bottom: 20px;
@@ -252,70 +265,58 @@ footer {
     clear: both;
 }
 
-/*Now we want to style our keys, our values, and our paragraphs with common styling.*/
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
-    display: inline-block;
 }
 
-/*Again common styling below*/
 .personal-info-item .key p,
 .personal-info-item .value p {
     margin: 0;
 }
 
-/*Now specifically styling our key*/
 .personal-info-item .key {
+    display: inline-block;
     width: 30%;
     margin-right: 21px;
     padding-top: 2px;
     vertical-align: top;
 }
 
-/*Now there's something specific to the paragraph we want: it to be bold.*/
 .personal-info-item .key p {
     font-weight: 700;
 }
 
 .personal-info-item .value {
+    display: inline-block;
     position: relative;
     width: 60%;
 }
 
-/*----------------------------------------------------------------------Skills */
+/*--------------------------------------------Skills*/
 
-/*What we want to do in our style.css is override or extend the progress class.*/
 .progress {
     position: relative;
     height: 25px;
-    margin-bottom: 4px;
 }
 
-/*Remember that the progress type represents the text label.
-We want it to sit on top of the progress bar instead of over to the right.
-We also want it to be positioned to the far left.*/
 .progress-type {
     position: absolute;
     left: 0px;
     font-weight: 400;
-    padding: 3px 30px 2px 10px; /*top-3 right-30 bottom-2 left-10*/
+    padding: 3px 30px 2px 10px;
     color: #fafafa;
     background-color: rgba(25, 25, 25, 0.2);
 }
 
+
 .progress-section {
-    margin: 40px 20px; /*40px top and bottom 20px left and right*/
+    margin: 40px 20px;
 }
 
-/*----------------------------------------------------------------------Work History */
 
-.history-heading {
-    color: #fafafa;
-    margin-bottom: 50px;
-}
+/*--------------------------------------------Work History*/
 
-/*This is the parent timeline-item style*/
 .timeline-item {
     padding: 4em 2em 0em 2em;
     position: relative;
@@ -328,9 +329,7 @@ We also want it to be positioned to the far left.*/
     margin: 0;
 }
 
-/*Now what we're going to do with the before pseudo element here is to zero in and to target
-our data-dates attribute.*/
-.timeline-item:before {
+.timeline-item::before {
     content: attr(data-dates);
     position: absolute;
     left: 2.5em;
@@ -338,12 +337,12 @@ our data-dates attribute.*/
     display: block;
     font-family: "Exo", sans-serif;
     font-weight: 500;
-    font-size: 0.8em;
+    font-size: .8em;
     padding: 0;
     margin: 0;
 }
 
-.timeline-item:after {
+.timeline-item::after {
     width: 12px;
     height: 12px;
     display: block;
@@ -355,11 +354,16 @@ our data-dates attribute.*/
     background: #fafafa;
 }
 
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
 .history-items {
     margin-bottom: 30px;
 }
 
-/*----------------------------------------------------------------------Contact Form */
+/*--------------------------------------------Contact*/
 
 .contact-heading {
     font-family: "Exo", sans-serif;
@@ -368,26 +372,34 @@ our data-dates attribute.*/
     margin-bottom: 20px;
 }
 
+
 .center-form {
     padding-top: 10px;
     margin: 0 auto;
     max-width: 70%;
 }
 
-/*Now, we don't necessarily have to do it this way, but it's just showing you that you can
-target a button element with a particular attribute.
-In this case, the attribute of type="submit".*/
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    color: #fafafa;
     background-color: #e84610;
+    color: #fafafa;
 }
 
-/*----------------------------------------------------------------------Media Query */
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
+}
 
-/*Our media query is only going to take effect when the width of the screen is 992px or greater.*/
+/*--------------------------------------------Media Queries*/
+
 @media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
     .center-form {
         padding-top: 30px;
         min-height: 240px;
